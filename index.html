@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js" integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.min.css" integrity="sha512-/k/mL9TQSZHAqtVqXJAiy5bt2w1P7gxdra0UlnFjVHF9a/LC2vxt7otx3BMcn79V/DZsPRwdw8tPlwbElMnIAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "LtfEvhxe7rn5jIVvV"
+        });
+    })();
+    </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation start -->
+    <nav class="flex">
+        <div id="sidebar-overlay"></div>
+        <div class="column flex-center">
+            <div class="flex-center logo">
+                <div class="flex-center logo-icon">
+                    <img src="./assets/transition4.gif" alt="">
+                </div>
+                <h1 class="name">Diva</h1>
+            </div>
+        </div>  
+        <div class="column flex-center tabs-container" id="sidebar"> <!--css  -->
+            <div class="flex-center icon-wrapper" id="close-sidebar-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="#hero" class="flex-center tab active">
+                <h4>Home</h4>
+            </a>
+            <a href="#about" class="flex-center tab">
+                <h4>About</h4>
+            </a>
+            <a href="#skills" class="flex-center tab">
+                <h4>Skills</h4>
+            </a>
+            <a href="#services" class="flex-center tab">
+                <h4>Services</h4>
+            </a>
+            <a href="#projects" class="flex-center tab">
+                <h4>Projects</h4>
+            </a>
+            <a href="#Events" class="flex-center tab">
+                <h4>Events</h4>
+            </a>
+        </div>
+        <div class="column flex-center buttons-wrapper">
+            <div class="flex-center handles-container">
+                <a href="https://linktr.ee/DevanshiJaiswal" class="flex-center icon-wrapper">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/devanshi-jaiswal-b83774217/" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/devanshi.jaiswal.39?utm_medium=copy_link" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/DevanshiJais" class="flex-center icon-wrapper">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+            </div>
+            <a href="#contact" class="btn primary contact-btn">Let's Talk!</a>
+            <div class="flex-center icon-wrapper menu-btn" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation -->
+
+    <!-- Hero start -->
+    <section id="hero" class="flex blur-effect">
+        <div class="container">
+            <div class="column hero-image">
+                <img src="./assets/hero5.png" alt="">
+            </div>
+            <div class="column">
+                <h1 class="heading-1">
+                    Creative
+                    <span class="gradient-text">
+                        User Interface
+                    </span>
+                    Designer
+                </h1>
+                <p class="muted description">
+                    Hola! I'm Devanshi! I'm an enthusiastic learner with a keen interest in 
+                    problem solving. The intricacies of the coding and corporate world have always 
+                    fascinated me since high school. I consider myself a happy and hard working person. 
+                    My dream has always been to be a part of something meaningful and to give back to our community. 
+                    When I'm not surfing every possible channel for new opportunities to avail myself of, 
+                    you can either find me engrossed in a book or sharing laughs with a friend! 
+                    Grit, hardwork and a 'figure it out' attitude rank among the top 3 tools in my toolkit.
+                </p>
+                <div class="facts-container">
+                    <!-- Fact start -->
+                    <div class="fact">
+                        <div class="flex-center top">
+                            <h1 class="title odometer" id="Projects">0</h1>
+                            <h1 class="title">+</h1>
+                        </div>
+                        <p class="muted">Completed Projects</p>
+                    </div>
+                    <!-- Fact end -->
+                     <!-- Fact start -->
+                    <div class="fact">
+                        <div class="flex-center top">
+                            <h1 class="title odometer" id="hackathons">0</h1>
+                            <h1 class="title">+</h1>
+                        </div>
+                        <p class="muted">Hackathons participated</p>
+                    </div>
+                    <!-- Fact end -->
+                     <!-- Fact start -->
+                    <div class="fact">
+                        <div class="flex-center top">
+                            <h1 class="title odometer" id="DSA">0</h1>
+                            <h1 class="title">+</h1>
+                        </div>
+                        <p class="muted">Dsa Questions Solved</p>
+                    </div>
+                    <!-- Fact end -->
+                </div> <!-- end fact-container -->
+                <div class="flex-center buttons-wrapper">
+                    <a href="#projects" class="btn">My Projects</a>
+                    <a href="#contact" class="btn primary">Let's Talk!</a>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- Hero end -->
+
+    <!-- About start -->
+     <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="sub-title primary">About Me</h3>
+                <h1 class="heading-1">I am Devanshi<span class="primary">Jaiswal</span></h1>
+                <p class="muted">
+                    Creative aficionado aspiring to learn the intricacies of the corporate world while trying to do something meaningful.
+                </p>
+                <div class="flex-center buttons-wrapper">
+                    <a href="#" class="btn primary readmore-btn">Read More</a>
+                    <div class="video-cluster">
+                        <div class="flex-center play-btn">
+                            <div class="flex-center play"></div>
+                            <p>Play My Video</p>
+                        </div>
+                        <div class="video-container" id="video-container"> 
+                            <div class="video-clip"> 
+                                <div id="close-btn" class="btn primary">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <video src="./assets/video.mp4" id="video" controls></video>
+                            </div>
+                        </div>
+                    </div><!-- end of video cluster -->
+                </div>
+            </div><!-- end section-header -->
+            <div class="brands-container">
+                <div class="logos-slide gray-scale"> 
+                    <img src="./assets/logos/amazon.png" alt="">
+                    <img src="./assets/logos/facebook.png" alt="">
+                    <img src="./assets/logos/google.png" alt="">
+                    <img src="./assets/logos/linkedin.png" alt="">
+                    <img src="./assets/logos/microsoft.png" alt="">
+                    <img src="./assets/logos/netflix.png" alt="">
+                    <img src="./assets/logos/paypal.png" alt="">
+                    <img src="./assets/logos/samsung.png" alt="">
+                    <img src="./assets/logos/skype.png" alt="">
+                    <img src="./assets/logos/whatsapp.png" alt="">
+                </div>
+                <div class="logos-slide gray-scale"> 
+                    <img src="./assets/logos/amazon.png" alt="">
+                    <img src="./assets/logos/facebook.png" alt="">
+                    <img src="./assets/logos/google.png" alt="">
+                    <img src="./assets/logos/linkedin.png" alt="">
+                    <img src="./assets/logos/microsoft.png" alt="">
+                    <img src="./assets/logos/netflix.png" alt="">
+                    <img src="./assets/logos/paypal.png" alt="">
+                    <img src="./assets/logos/samsung.png" alt="">
+                    <img src="./assets/logos/skype.png" alt="">
+                    <img src="./assets/logos/whatsapp.png" alt="">
+                </div>
+            </div>
+
+            <div class="education-experience-container">
+                <div class="column">
+                    <h2 class="gradient-text heading-1">EDUCATION</h2>
+                    <div class="contents">
+                    <div class="box">
+                        <h4>2018 - 2022</h4>
+                        <h3>High School Degree</h3>
+                        <p>Graduated from <span class="bold">Sheiling House School</span></p>
+                        <p>Activities: Debate | Dance | Declamation | MUN's | Creative Writing | Event Management</p>
+                    </div>
+                    <div class="box">
+                        <h4>2023 - 2027</h4>
+                        <h3>Bachelor's Degree</h3>
+                        <p>Currently studying at <span class="bold">Bennett University</span></p>
+                        <p>Societies : IEEE (Jr. Tech Member) | Google Developer's Society Club (Jr. Management member -> Sr. Sponsorships Head) | GeeksForGeeks (Jr. PR & Outreach Member) | Codechef (Jr. Tech Team Member)</p>
+                        <p>Activities : Entrepreneurship & Tech Hackathons | Coding Competitions | Mentorship | Creative Writing | Event Management</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="gradient-text heading-1">EXPERIENCE</h2>
+                    <div class="contents">
+                    <div class="box">
+                        <h4>2022 - 2023</h4>
+                        <h3>Marketing Head</h3>
+                        <p>I contributed to Nayepankh by managing mass email campaigns and promoting our initiatives on LinkedIn and Instagram. Additionally, I coordinated Zoom meetings with potential donors and funders to support our fundraising efforts.</p>
+                    </div>
+                    <div class="box">
+                        <h4>2024</h4>
+                        <h3>Intern</h3>
+                        <p>Tasklance is a pune based startup where I managed a VectorDB, focusing on the development and implementation of vector databases for AI ecommerce website.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div><!-- end container -->
+     </section>
+     <!-- About end -->
+
+     <!-- Skills start -->
+      <section id="skills" class="blur-effect">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1 gradient-text">
+                    My Skills
+                </h1>
+                <p class="muted">
+                    
+                </p>
+            </div>
+            <div class="skills-container">
+                <!-- skill start -->
+                <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/mern.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Mern</h3>
+                        <h2 class="progress">55%</h2>
+                    </div>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill start -->
+                <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/both.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Java & Python</h3>
+                        <h2 class="progress">65%</h2>
+                    </div>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill start -->
+                <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/cpp.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Cpp</h3>
+                        <h2 class="progress">50%</h2>
+                    </div>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill start -->
+                <div class="flex skill">
+                    <div class="gray-scale image">
+                        <img src="./assets/flutter.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Flutter</h3>
+                        <h2 class="progress">45%</h2>
+                    </div>
+                </div>
+                <!-- skill end -->
+            </div>
+        </div>
+      </section>
+      <!-- Skills end -->
+
+    <!-- Services start -->
+     <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">
+                    <span class="gradient-text">My Strengths</span>
+                </h1>
+                <p class="muted">
+                    Grit, hard work and a 'figure-it-out' attitude rank among the top 3 tools in my toolkit.
+                </p>
+            </div>
+            <div class="services-container">
+                <!-- service start -->
+                 <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.1</h1>
+                        <h2 class="title">Research and Analysis</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            
+                            Research and analysis encompass systematic inquiry and evaluation across various fields, including intelligence, education, and market behavior.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore projects</a>
+                    </div>
+                 </div>
+                <!-- service end -->
+
+                 <!-- service start -->
+                 <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.2</h1>
+                        <h2 class="title">Visual Design</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            Visual design in tech focuses on creating aesthetically pleasing and user-friendly digital interfaces that effectively communicate a brand's message and enhance the overall user experience
+                            
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore projects</a>
+                    </div>
+                 </div>
+                <!-- service end -->
+
+                <!-- service start -->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.3</h1>
+                        <h2 class="title">Database Management</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            A Database Management System (DBMS) is a software application designed to store, manage, and facilitate access to structured data, allowing users to perform operations such as creating, reading, updating, and deleting data efficiently
+                            
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore projects</a>
+                    </div>
+                 </div>
+                <!-- service end -->
+
+                 <!-- service start -->
+                 <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.4</h1>
+                        <h2 class="title">Generating Leads, Listings and Leverages</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            Generating leads quickly involves optimizing lead capture pages, scoring leads, and leveraging SEO, LinkedIn prospecting, and CRM tools
+                            
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore projects</a>
+                    </div>
+                 </div>
+                <!-- service end -->
+
+                <!-- service start -->
+                <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.5</h1>
+                        <h2 class="title">Flutter Developement</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            Flutter is an open-source UI toolkit developed by Google for building beautiful, natively compiled, multi-platform applications from a single codebase
+                            
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore projects</a>
+                    </div>
+                 </div>
+                <!-- service end -->
+
+                 <!-- service start -->
+                 <div class="flex service">
+                    <div class="flex top">
+                        <h1 class="muted">0.6</h1>
+                        <h2 class="title">Event Management</h2>
+                    </div>
+                    <div class="middle">
+                        <p class="muted">
+                            Event management is the comprehensive process of planning, organizing, and executing events, encompassing all aspects from budgeting and venue selection to marketing and logistics, to ensure successful outcomes and memorable experiences
+                            
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#projects" class="flex-center btn">Explore projects</a>
+                    </div>
+                 </div>
+                <!-- service end -->
+            </div>
+        </div>
+     </section>
+    <!-- Service end -->
+
+     <!-- Projects start -->
+      <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">
+                    <span class="gradient-text">Projects</span>
+                </h1>
+            </div>
+            <div class="projects-container">
+                <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Real Estate Search, post & chat Website</h3>
+                        <p class="muted">
+                            A real estate website that allows users to easily search for properties, post listings, 
+                            and communicate with agents and other users. Built using a modern web framework like React, 
+                            with a backend API server for handling user accounts, listings, and chat functionality. Utilizes a 
+                            geospatial database to enable advanced property searches by location, price range, number of bedrooms/bathrooms, etc. 
+                            Incorporates real-time chat using WebSockets for instant messaging between users
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7217984352498933760/" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7217984352498933760/" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project2.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">AR Business Card</h3>
+                        <p class="muted">
+                            The AR Business Card experience allows users to create interactive and visually engaging business cards using augmented reality 
+                            technology. This innovative approach enhances networking by providing a dynamic way to share contact information and personal branding.
+                            You can use this scanner for live experience 👉<a href="https://lnkd.in/gtdHRWJU"> Scanner </a>
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7213590252584677376/" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://github.com/Devanshi-cloud/AR/blob/main/Purple%20Gradient%203D%20Professional%20Engineer%20Business%20Card.png" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project3.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Managed VectorDB</h3>
+                        <p class="muted">
+                            Creating and exploring VectorDB tables has been an enlightening experience, revealing the power of vector embeddings in organizing and 
+                            retrieving complex data efficiently. This technology is particularly useful in real-world applications such as 
+                            recommendation systems, natural language processing, and image recognition, enabling businesses to enhance 
+                            user experiences and drive data-driven decision-making.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7211784347949912064/" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://docs.google.com/document/d/1EL4a7b5xOJiJEFntr7Xfzfba70VIvYu8j97ioII5naI/edit#heading=h.gt5j2mhqv5s9" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project14.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Job Matcher</h3>
+                        <p class="muted">
+                            Our Java project is a comprehensive job application platform that allows users to browse job listings, 
+                            save interesting positions, and apply directly by submitting their resumes. Users can manage their 
+                            profiles by viewing and editing their personal information, and they can customize the application experience 
+                            by modifying the CSV file to include their own job listings.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://github.com/Devanshi-cloud/Job_Matcher" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://github.com/Devanshi-cloud/Job_Matcher" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project15.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">NGO and Resteraunts Unite</h3>
+                        <p class="muted">
+                            Several organizations facilitate the collection of leftover food from restaurants 
+                            to distribute it to those in need, such as roadside beggars. This project also focuses on eradicating hunger by collecting excess food from 
+                            restaurants and events to serve marginalized communities.
+                             Me and my teammates created this site in Hackauction and this helped us to secure 1st place.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://github.com/urvashi912/HackAuction" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://github.com/urvashi912/HackAuction" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+                 
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project4.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Built a coaching center Marketing Website</h3>
+                        <p class="muted">
+                        Completed a personal project I'm really proud of—a website for my dad's coaching centre! 
+                        I started it on Father's Day and wrapped it up in just four days using React JS and Vite. 
+                        It was a rewarding experience to combine my skills with a meaningful project for my dad!
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://github.com/Devanshi-cloud/Chemistry" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://chemistrybynaveenjaiswal.vercel.app/" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project13.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Fem-Rescue App</h3>
+                        <p class="muted">
+                            We developed a female rescue app featuring an SOS alert system that sends live locations to both the 
+                            police and a designated friend. Our innovative project earned us the 23rd rank out of 600 teams at the 
+                            Smart India Hackathon (SIH).
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://github.com/urvashi912/Fem-Rescue" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://github.com/urvashi912/Fem-Rescue" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project9.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Real Estate Agency Marketing Website</h3>
+                        <p class="muted">
+                            The housing website project inspired by Grant Cardone's "Sell or Be Sold" focuses on enhancing technical skills using 
+                            React Js and AOS for animations. Key features include a fully animated interface with smooth transitions, 
+                            responsive design, and engaging hover effects. The site also features a dynamic counter that activates upon 
+                            loading and a sidebar for easy navigation, making it visually appealing and user-friendly.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://github.com/Devanshi-cloud/Diva_realty" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7207726092286066688/" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project10.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Beginner-Friendly Flutter Apps</h3>
+                        <p class="muted">
+                            The project encompasses several user-friendly applications, 
+                            including a sign-up page designed for smooth transitions to a main page, 
+                            an intuitive currency converter for easy currency exchanges, a REST API calling app 
+                            that fetches and displays fake user details, and a comprehensive real estate listing platform 
+                            for showcasing properties. Each component aims to enhance user experience and functionality across various domains.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7205599575254958083/" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7204397631601614848/" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+
+                 <!-- project start -->
+                 <div class="flex project">
+                    <div class="picture">
+                        <img src="./assets/project11.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h3 class="name">Number Plate Detection System with AI</h3>
+                        <p class="muted">
+                            The Number Plate Detection System utilizes the OpenCV and NumPy libraries to implement a 
+                            pre-trained Haar Cascade classifier for detecting license plates. The system employs the 
+                            "Sentinel_number_plate.xml" file, which contains the trained classifier information, enabling it 
+                            to accurately identify the location and size of license plates in video streams. Me and my teammates created it in 
+                            Hackachino hackathon.
+                        </p>
+                    </div>
+                    <div class="flex buttons-wrapper">
+                        <a href="https://github.com/Devanshi-cloud/Number_Plate_Detection?tab=readme-ov-file" class="btn share-btn">
+                            <i class="fa-solid fa-share"></i>
+                        </a>
+                        <a href="https://trailblazersaiml.netlify.app/" class="btn primary">Demo</a>
+                    </div>
+                 </div>
+                 <!-- project end -->
+            </div>
+        </div>
+      </section>
+      <!--Projects end-->
+
+    <!-- Events & Certificates start -->
+     <section id="feedbacks">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="heading-1">Certificates  <span class="gradient-text">Events</span> & More</h1>
+                <p class="muted">
+                    
+                </p>
+            </div>
+            <div class="feedbacks-container">
+                <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/C1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            I learnt key concepts such as governance, risk management, and compliance, which are essential for managing cloud resources effectively. 
+                            The program also emphasizes best practices for building secure and efficient cloud architectures.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">AWS Cloud Foundations</h2>
+                        <p class="muted">2023</p>
+                    </div>
+
+                 </div>
+                 <!-- feedblock end -->
+
+                 <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/C2.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            As a junior member of the IEEE tech team, my experience has involved assisting in the overall activities of the club, 
+                            performing basic coding tasks, and attending club meets with my fellow teammates.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">IEEE Offer Letter</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+
+                 <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="./assets/C3.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            Real estate investing through foreclosures and house flipping can yield significant profits, 
+                            but it requires a solid understanding of the market, renovation processes, and financial management
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Real Estate Investing</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+                  <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/C4.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            The Digital Skills for the Artificial Intelligence Revolution (DS4AIR) course provides a comprehensive introduction to 
+                            essential digital skills needed in the AI-driven workplace. Over eight chapters
+                            culminating in a certificate upon completion of quizzes for each chapter
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Artificial Intelligence Foundations</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+
+                 <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/c6.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            The course includes written materials, lecture videos, and practical coding exercises,
+                             gradually advancing to more complex topics like file handling and HTTP connections, 
+                             making it a comprehensive introduction to Python programming
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Google Python Crash Course</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+
+                 <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/C8.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            The course covers the fundamentals of project management, including the project lifecycle phases 
+                            (initiation, planning, execution, monitoring, and closing), various project management methodologies 
+                            like Waterfall and Agile, and tools for organizing tasks and staying on track.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Foundations Of Project Management</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+
+                 <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/C12.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            The Introduction to Machine Learning course by Infosys covers fundamental concepts and techniques in machine learning, 
+                            including supervised, unsupervised, and reinforcement learning. I learnt how to train algorithms on datasets to identify patterns and make predictions.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Introduction To Machine Learning</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+                  <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/C15.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            As a member of GFG PR & Outreach, I successfully secured over 700 registrations for the Galactic Escape event, won the CodeDate contest, conducted over 100 cold calls and emails for sponsorships and collaborations,
+                            and contributed to overall marketing and management efforts.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">GeeksForGeeks Offer Letter</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+                  <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/C16.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            Key takeaways include understanding how to frame business scenarios, select appropriate visuals, 
+                            create effective data representations, and communicate insights clearly to stakeholders, 
+                            thereby enabling informed strategic planning and operational improvements.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">Data Visualisation: Empowering Business with Effective Insights</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+                  <!-- feedblock start -->
+                 <div class="feedblock">
+                    <div class="profile">
+                        <img src="assets/C13.png" alt="">
+                    </div>
+                    <div class="details">
+                        <p class="muted">
+                            As a GDSC management member, I had the privilege of collaborating with a team of passionate 
+                            individuals who shared a common goal of fostering a vibrant community. 
+                            Together, we organized engaging workshops, hackathons, and social events that brought together 
+                            curious minds from diverse backgrounds.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="flex-center stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="name">GDSC Offer Letter</h2>
+                        <p class="muted">2023</p>
+                    </div>
+                    
+                 </div>
+                 <!-- feedblock end -->
+            </div>
+        </div>
+     </section>
+     <!-- Events & Certificate end -->
+
+    <!-- Contact start -->
+     <section id="contact">
+        <div class="container">
+            <div class="column contact-options">
+                <h1 class="heading-1">
+                    <span class="gradient-text">Let's Collab!</span>
+                </h1>
+                <p class="muted">
+                    Lets learn from each other and make better projects together. 
+                </p>
+                <div class="options">
+                    <a href="#" class="flex option">
+                    <span class="flex-center icon-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span>devanshijaiswal7@gmail.com</span>
+                </a>
+                <a href="#" class="flex option">
+                    <span class="flex-center icon-wrapper">
+                        <i class="fa-solid fa-mobile"></i>
+                    </span>
+                    <span>9161055529</span>
+                </a>
+                <a href="#" class="flex option">
+                    <span class="flex-center icon-wrapper">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span>Bennett University, Greater Noida</span>
+                </a>
+                </div>    
+            </div>
+            <div class="column contact-form">
+                <div class="top">
+                    <p class="muted">
+                        Send me a message and Let's work together.
+                    </p>
+                </div>
+            <div class="middle">
+                <div class="flex row">
+                    <input type="text" id="First" name="First" placeholder="First name" class="control" required>
+                    <input type="text" id="Last" name="Last" placeholder="Last name" class="control" required>
+                </div>
+                <div class="flex row">
+                    <input type="email" id="email" name="email" placeholder="Email address" class="control" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" class="control" required>
+                </div>
+                <input type="text" id="subject" name="subject" placeholder="Subject" class="control" required>
+                <textarea id="Message" name="Message" cols="30" rows="10" | class="control" required>Message</textarea>
+            </div>
+            <div class="flex-center bottom">
+                <button type="submit" class="btn primary" onclick="sendMail()">Send Message</button>
+            </div>
+        </div>
+     </section>
+     <!-- Contact end -->
+
+     <!-- Chatbot start -->
+     <div id="chatbot">
+        <div id="chat-header">
+            Devanshi's ChatBot!
+            <button id="close-bt">X</button>
+        </div>
+        <div id="chat-body">
+            <div id="chat-messages"></div>
+        </div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <button id="chat-toggle"><img src="https://camo.githubusercontent.com/6a7e09fe594750680a1365747709027c2becb03fcbeeae2f1d95fb9cd8d4beea/68747470733a2f2f63646e6c2e69636f6e73636f75742e636f6d2f6c6f747469652f7072656d69756d2f7468756d622f68617070792d726f626f742d7361792d6861692d353636353335372d343732393035322e676966" alt="" width="50"></button>
+  
+      <!-- Chatbot end -->
+    <!-- Footer start -->
+     <footer>
+        <div class="container">
+            <div class="flex-center logo">
+                <div class="flex-center logo-icon">
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- Footer end -->
+    <script src="main.js"></script>
+</body>
+</html>
